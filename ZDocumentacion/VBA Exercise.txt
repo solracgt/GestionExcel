@@ -1,0 +1,32 @@
+Ejercicio de VBA: construya una base de datos en Excel y sus formularios de administrador, tenga en cuenta el punto a continuación:
+
+Directrices básicas:
+--------------------
+ Debe construirse solo con VBA, evite usar fórmulas de Excel.
+ Dividir la solución en diferentes módulos/funciones/procedimientos agrupando funcionalidades relacionadas en módulos. Evite procedimientos/módulos extensos.
+ Se debe declarar cada variable/constante que debe coincidir con sus tipos de datos. Evitar el uso de variables no declaradas/variantes.
+
+Descripción de la solución:
+---------------------------
+    Crear una hoja en Excel que se utilizará como base de datos. Debe tener cinco columnas diferentes: Código, Nombre, fecha de nacimiento, Correo electrónico, Domicilio. Esta hoja debe estar siempre oculta sin opción para mostrar manualmente solo mediante programación.
+    Cree un formulario de usuario con las siguientes opciones:
+
+o Nuevo registro: debe permitir al usuario crear nuevos registros en la hoja de la base de datos, considere los siguientes puntos:
+
+    Código: campo obligatorio, bloqueado, Autonumérico/correlativo. Debería automáticamente rellene el siguiente código en función de los datos de la base de datos. Codifica incrementos correlativos por 1.
+    Nombre: campo obligatorio.
+    Fecha de nacimiento: campo obligatorio, debe estar validando su formato de fecha
+(mm/dd/aaaa) y baje la fecha actual.
+    Correo electrónico: campo opcional, debe validar formato de correo electrónico (ej: aa@aa.com) o en blanco.
+    Domicilio: opcional
+
+o Buscar: debe habilitar al usuario elementos de búsqueda en la hoja de la base de datos. debería ser capaz para usar Código (coincidencia exacta) o Nombre (Contiene las palabras clave) como clave de búsqueda. Si el nombre es utilizado como clave de búsqueda, se deben mostrar todas las coincidencias múltiples encontradas. El usuario debe ser capaz de editar o eliminar el registro seleccionado encontrado.
+
+   Editar: se aplican todas las reglas de los nuevos registros.
+   Editar/Eliminar: mostrar un cuadro de confirmación antes de guardar los cambios.
+
+o Exportar datos de la hoja de la base de datos a un nuevo libro de Excel. Debe tener 2 modos diferentes:
+
+    Por rango de código: exportar todos los datos entre los rangos de código seleccionados (ej: de 5 a 10)
+    Por nombres Iniciales: exportar todos los datos comenzando por la palabra clave seleccionada.
+

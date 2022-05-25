@@ -1,0 +1,31 @@
+Ejercicio de programación: 
+Cree una herramienta de consolidación de Excel con un observador de carpetas.
+
+Directrices básicas:
+- Puede utilizar los lenguajes C#, python o java. Por favor, siga OOP.
+
+Descripción de la solución:
+1.- Cree una solución que monitoree una carpeta en busca de nuevos archivos.
+
+2.- Cada vez que se encuentre un archivo, se debe verificar si es un archivo excel (archivos .xls*). 
+2a.- Si es cierto, debe tomar cada hoja en él y consolidarlo en un archivo de libro maestro (haga una copia de cada hoja a la archivo maestro).
+
+3.- Debe tener una opción para elegir qué carpeta ver.
+
+4.- Cada archivo encontrado debe moverse a 2 carpetas diferentes dependiendo de si era o no un archivo de Excel
+    o Procesado
+    o No aplicable.
+
+
+Instalaciones necesarias:
+  - pip install xlrd (No acepta archivos Excle xlsx, solo 97-2003 xls)
+* - pip install openpyxl (Excel 2010)
+  - Para poder incluir imágenes (jpeg, png, bmp,...) en un archivo openpyxl,
+    también necesitará la biblioteca "pillow" que se puede instalar con:
+    pip install pillow
+* - pip install pandas
+  - pip install BeautifulSoup4 (lee html)
+
+Spyder como ide
+
+
